@@ -42,7 +42,6 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <h1>Login</h1>
-        <p className="hint">Hint: Use admin/admin</p>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
