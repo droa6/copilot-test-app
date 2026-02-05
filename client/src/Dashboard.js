@@ -21,7 +21,7 @@ function Dashboard() {
     }
 
     fetchDashboardData();
-  }, [navigate]);
+  }, []);
 
   const fetchDashboardData = async () => {
     try {

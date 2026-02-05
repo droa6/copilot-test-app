@@ -45,7 +45,14 @@ cd server
 npm install
 ```
 
-3. Install client dependencies:
+3. (Optional) Configure environment variables:
+```bash
+# Copy the example env file
+cp .env.example .env
+# Edit .env to change admin credentials if needed
+```
+
+4. Install client dependencies:
 ```bash
 cd ../client
 npm install

@@ -9,9 +9,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Default credentials
-const VALID_USERNAME = 'admin';
-const VALID_PASSWORD = 'admin';
+// Default credentials (use environment variables in production)
+const VALID_USERNAME = process.env.ADMIN_USERNAME || 'admin';
+const VALID_PASSWORD = process.env.ADMIN_PASSWORD || 'admin';
 
 // Login endpoint
 app.post('/api/login', (req, res) => {
