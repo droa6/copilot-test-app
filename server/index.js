@@ -5,8 +5,15 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// CORS configuration
+const corsOptions = {
+  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Default credentials (use environment variables in production)
